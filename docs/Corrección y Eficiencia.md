@@ -1,5 +1,24 @@
 ## Corrección y Eficiencia: 🎯🎨✨
 
+
+
+# ÍNDICE
+
+1. [Corrección](#corrección-📌)
+   - [Testing](#🪧-testing)
+   - [Debugging](#🐛-debugging)
+   - [Walkthrough](#📣-walkthrough)
+   - [Verificación](#☑️​-verificación)
+2. [Eficiencia](#eficiencia-📌)
+   - [Ejemplo 1: Algoritmo de tiempo constante](#ejemplo-1-algoritmo-de-tiempo-constante)
+   - [Ejemplo 2: Con condicional IF](#ejemplo-2-con-condicional-if)
+   - [Ejemplo 3: Con condicional ELSE](#ejemplo-3-con-condicional-else)
+   - [Ejemplo 4: Con ciclo FOR](#ejemplo-4-con-ciclo-for)
+   - [Ejemplo 5: Con ciclo WHILE](#ejemplo-5-con-ciclo-while)
+
+---
+
+
 ### CORRECCIÓN: 📌​
 
 Un programa se considera correcto si:
@@ -65,7 +84,38 @@ x := x * 10;            // T(4) = 2 UT
 3. **Con condicional ELSE:**
    La evaluación del condicional ELSE es exactamente igual que la del IF. Sin embargo, antes de calcular el tiempo de ejecución, se debe identificar si el cálculo de memoria y tiempo se realizará siguiendo el bloque IF o el bloque ELSE. Se debe considerar siempre la rama que implique más UT.
 
-Con condicional ELSE:
-La evaluación del condicional ELSE es exactamente igual que la del IF. Sin embargo, antes de calcular el tiempo de ejecución, se debe identificar si el cálculo de memoria y tiempo se realizará siguiendo el bloque IF o el bloque ELSE. Se debe considerar siempre la rama que implique más UT.
+
+---
+
+4. **Con ciclo FOR:**
+   Se debe seguir la formula 3*(N) + 2 + N*(Cuerpo)
+   Siendo N la cantidad de veces que se ejecuta el for (10 en el siguiente ejemplo).
+   Siendo Cuerpo las UT de las instrucciones adentro del for.
+```pascal
+aux := 49;              // T(1) = 1 UT
+aux := aux * 5;         // T(2) = 2 UT
+for i:=1 to 10 do       // T(3) = 3*10 + 2 + 10 * 5 = 82UT
+  temp := aux - 5;      // 2UT
+  x := temp + aux + 2;  // 3UT
+end;
+x := x * 10;            // T(4) = 2 UT
+// TOTAL: 87 UT
+```
+
+---
 
 
+5. **Con ciclo WHILE:**
+   Se debe seguir la formula N+1 (EvaluarCond) + N (cuerpo)
+   Siendo N la cantidad de veces que se ejecuta el while.
+   Siendo EvaluarCond las UT que se tarda en evaluar las condiciones del while.
+   Siendo Cuerpo las UT dentro del while
+```pascal
+aux := 5;        // T(1) = 1 UT
+while (aux>5) do       // T(2) = 5+1 * 1 + 5 * 4 = 26UT
+  x:=x+1;   //2UT
+  aux:= aux - 1; //2UT
+end;
+x := x * 10;            // T(4) = 2 UT
+// TOTAL: 28 UT
+```
