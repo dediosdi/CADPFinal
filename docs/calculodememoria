@@ -1,4 +1,5 @@
-## Calculo de memoria
+## Calculo de memoria ##
+
 Para calcular la ocupación de la memoria se debe considerar la:
 
 ▪️Memoria estática: ​Variables ​locales y globales del programa.​
