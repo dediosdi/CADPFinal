@@ -27,3 +27,39 @@ ________________________________________________________________________________
 
    ⏳​ El analisis de la eficiencia estudia el tiempo que tarda un algoritmo en ejecutarse y la memoria que requiere. 
 
+   ❗ Siempre que los valores para medir la eficiencia cambien segun los valores de entrada(por ejemplo, cortar un bucle a           partir de un dato ingresado por teclado), se deben evaluar los casos limites/peores casos del algoritmo.
+
+    CONSIDERACIONES PARA MEDIR LA EFICIENCIA:
+    Una instrucción elemental equivale a 1UT.
+
+    EJEMPLOS:
+    ◾ Algoritmo de tiempo constante:
+    aux:=4; //T(1) = 1UT
+    aux:= aux * 5; //T(2) multiplicación+asignacion= 2 UT
+    xd:=aux; //T(3) = 1UT
+    //TOTAL: 4UT
+
+    ___________________________________________________
+
+     ◾ Con condicional IF:
+    aux:=49; //T(1) = 1UT
+    aux:= aux * 5; //T(2) = 2 UT
+    if (aux > 45) then begin  //Como se evalúa siempre el peor caso es necesario suponer que se va a entrar al else -> Evaluar     condición del IF (1UT)
+    temp:=aux-5; //Resta + asignación 2UT
+    x:=temp+aux+2; //Suma+resta+asignación 3UT 
+                  //T(3)=1+2+3=6UT
+    end;
+    x:=x*10; T(4)=2UT
+    //TOTAL: 11UT
+
+    ___________________________________________________
+
+    ◾ Con condicional ELSE:
+     Es exactamente igual que el if pero se debe evaluar antes si el calculo de memoria se va a hacer siguiendo el if o             siguiendo el else. Se debe hacer por la rama que más UT lleve.
+
+    ___________________________________________________
+
+    ◾ Con condicional ELSE:
+     Es exactamente igual que el if pero se debe evaluar antes si el calculo de memoria se va a hacer siguiendo el if o             siguiendo el else. Se debe hacer por la rama que más UT lleve.
+
+
