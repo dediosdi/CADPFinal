@@ -1,0 +1,8 @@
+## Calculo de memoria
+Para calcular la ocupación de la memoria se debe considerar la:
+
+▪️Memoria estática: ​Variables ​locales y globales del programa.​
+▪️Memoria dinamica: Cantidad de veces que se reserva y libera memoria con new y dispose.
+
+
+  
