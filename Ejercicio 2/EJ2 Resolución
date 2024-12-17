@@ -1,0 +1,7 @@
+▪️​ Ejercicio 2: 
+	▫️​ Si bien ambas versiones son válidas, la versión B del programa es ligeramente menos eficiente ya que:
+
+❌ El código no es reutilizable: Si más adelante se necesita un array con las mismas características en otro lugar del código, 	hay que repetir la definición del array, lo que puede hacer que el código sea más largo y menos mantenible.
+❌ Dificulta el cambio de tamaño o tipo: Si más adelante se necesita cambiar el tamaño del vector o el tipo de los datos (por 
+ejemplo, de integer a real), hay que modificar todos los lugares donde se declara ese array.
+
