@@ -1,10 +1,15 @@
-##  Resolución de Examenes Finales de la materia "Conceptos de algoritmos, datos y programas" ​📚​
-Finales tomados en mesas anteriores.
+## Cálculo de memoria: 🖥️​
 
 Para calcular la ocupación de la memoria se debe considerar la:
 
 ▪️Memoria estática: ​Variables ​locales y globales del programa.​
 ▪️Memoria dinamica: Cantidad de veces que se reserva y libera memoria con new y dispose.
 
+
+✔️​ Se entrega una tabla de ocupación orientativa donde cada tipo de dato tiene un valor:
+
+    ```bash
+		   char
+    ```
 
   
