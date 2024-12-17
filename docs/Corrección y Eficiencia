@@ -1,0 +1,29 @@
+## Corrección y Eficiencia: 
+
+
+## CORRECCIÓN: 📌​
+ 
+  Un programa se considera eficiente si:
+  ✔️​ Realiza la tarea buscada de acuerdo a sus especificaciones.
+
+  ## Técnicas para la correción de programas: 
+    🪧 TESTING: El testing es el proceso de verificar que un programa o sistema funcione correctamente. Consiste en ejecutar          el software para detectar errores o fallos, asegurando que el código cumpla con los requisitos especificados. Se               evalúan los casos limites del algoritmo.
+
+    🐛 DEBUGGING: Es el proceso de descubrir y reparar la causa del error. Se diseñan y aplican pruebas adicionales para              conocer y resolver la naturaleza del error. También se suelen agregar sentencias adicionales al programa para                  monitorear su comportamiento en determinados puntos de la ejecución.
+
+    📣 WALKTHROUGH: Es recorrer el programa frente a una audiencia.
+
+    ☑️​ VERIFICACIÓN: Verificar un programa significa controlar las pre y post condiciones del mismo.
+
+    
+
+_______________________________________________________________________________________
+
+
+
+## EFICIENCIA: 📌​
+
+   Una vez se termina un algoritmo y se decide que es correcto, el proximo paso es determinar la eficiencia del mismo.
+
+   ⏳​ El analisis de la eficiencia estudia el tiempo que tarda un algoritmo en ejecutarse y la memoria que requiere. 
+
