@@ -1,4 +1,5 @@
 ##  Resolución de Examenes Finales de la materia "Conceptos de algoritmos, datos y programas" ​📚​
+Finales tomados en mesas anteriores.
 
 ## Cómo usar este repositorio 🛠️
 
