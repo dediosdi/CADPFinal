@@ -7,7 +7,7 @@
 1. [Corrección](#corrección-📌)
    - [Testing](#🪧-testing)
    - [Debugging](#🐛-debugging)
-   - [Walkthrough](#📣-walkthrough)
+   - [Walkthrough](#📣-WALKTHROUGH)
    - [Verificación](#☑️​-verificación)
 2. [Eficiencia](#eficiencia-📌)
    - [Ejemplo 1: Algoritmo de tiempo constante](#ejemplo-1-algoritmo-de-tiempo-constante)
