@@ -5,6 +5,7 @@ Para calcular la ocupación de la memoria se debe considerar la:
 ▪️Memoria estática: ​Variables ​locales y globales del programa.​
 ▪️Memoria dinamica: Cantidad de veces que se reserva y libera memoria con new y dispose.
 
+_______________________________________________________________________________________
 
 ✔️​ Se entrega una tabla de ocupación orientativa donde cada tipo de dato tiene un valor:
     ▪️char (1 byte)
