@@ -1,47 +1,53 @@
-Corrección y Eficiencia: 🎯🎨✨
+## Corrección y Eficiencia: 🎯🎨✨
 
-CORRECCIÓN: 📌​
+### CORRECCIÓN: 📌​
 
 Un programa se considera correcto si:
 ✔️​ Realiza la tarea buscada de acuerdo a sus especificaciones. 🎯🎯🎯
 
-Técnicas para la corrección de programas:
+#### Técnicas para la corrección de programas:
 
-🪧 TESTING:
-El testing es el proceso de verificar que un programa o sistema funcione correctamente. Consiste en ejecutar el software para detectar errores o fallos, asegurando que el código cumpla con los requisitos especificados. También se evalúan los casos límites del algoritmo.
+- 🪧 **TESTING:**
+  El testing es el proceso de verificar que un programa o sistema funcione correctamente. Consiste en ejecutar el software para detectar errores o fallos, asegurando que el código cumpla con los requisitos especificados. También se evalúan los casos límites del algoritmo.
 
-🐛 DEBUGGING:
-Es el proceso de descubrir y reparar la causa del error. Para ello, se diseñan y aplican pruebas adicionales que permitan conocer y resolver la naturaleza del error. Además, es común agregar sentencias adicionales al programa para monitorear su comportamiento en determinados puntos de la ejecución.
+- 🐛 **DEBUGGING:**
+  Es el proceso de descubrir y reparar la causa del error. Para ello, se diseñan y aplican pruebas adicionales que permitan conocer y resolver la naturaleza del error. Además, es común agregar sentencias adicionales al programa para monitorear su comportamiento en determinados puntos de la ejecución.
 
-📣 WALKTHROUGH:
-Implica recorrer el programa frente a una audiencia, explicando su funcionamiento y buscando posibles errores o mejoras.
+- 📣 **WALKTHROUGH:**
+  Implica recorrer el programa frente a una audiencia, explicando su funcionamiento y buscando posibles errores o mejoras.
 
-☑️​ VERIFICACIÓN:
-Verificar un programa consiste en controlar las precondiciones y postcondiciones asociadas al mismo, asegurando que cumpla con los criterios establecidos. ✨✨✨
+- ☑️​ **VERIFICACIÓN:**
+  Verificar un programa consiste en controlar las precondiciones y postcondiciones asociadas al mismo, asegurando que cumpla con los criterios establecidos. ✨✨✨
 
-EFICIENCIA: 📌​
+---
+
+### EFICIENCIA: 📌​
 
 Una vez que un algoritmo se considera correcto, el siguiente paso es determinar su eficiencia. ✨🎯🎨
 
-⏳​ El análisis de la eficiencia estudia el tiempo que tarda un algoritmo en ejecutarse y la memoria que requiere.
+- ⏳​ El análisis de la eficiencia estudia el tiempo que tarda un algoritmo en ejecutarse y la memoria que requiere.
+- ❗ Siempre que los valores para medir la eficiencia cambien según los valores de entrada (por ejemplo, cortar un bucle a partir de un dato ingresado por teclado), se deben evaluar los casos límites y los peores casos del algoritmo.
 
-❗ Siempre que los valores para medir la eficiencia cambien según los valores de entrada (por ejemplo, cortar un bucle a partir de un dato ingresado por teclado), se deben evaluar los casos límites y los peores casos del algoritmo.
-
-CONSIDERACIONES PARA MEDIR LA EFICIENCIA:
+#### CONSIDERACIONES PARA MEDIR LA EFICIENCIA:
 
 Una instrucción elemental equivale a 1 UT (Unidad de Tiempo). 🎯🎨✨
 
-EJEMPLOS:
+##### EJEMPLOS:
 
-Algoritmo de tiempo constante:
+1. **Algoritmo de tiempo constante:**
 
+```pascal
 aux := 4;               // T(1) = 1 UT
 aux := aux * 5;         // T(2) = multiplicación + asignación = 2 UT
 xd := aux;              // T(3) = 1 UT
 // TOTAL: 4 UT
+```
 
-Con condicional IF:
+---
 
+2. **Con condicional IF:**
+
+```pascal
 aux := 49;              // T(1) = 1 UT
 aux := aux * 5;         // T(2) = 2 UT
 if (aux > 45) then begin
@@ -52,6 +58,12 @@ if (aux > 45) then begin
 end;
 x := x * 10;            // T(4) = 2 UT
 // TOTAL: 11 UT
+```
+
+---
+
+3. **Con condicional ELSE:**
+   La evaluación del condicional ELSE es exactamente igual que la del IF. Sin embargo, antes de calcular el tiempo de ejecución, se debe identificar si el cálculo de memoria y tiempo se realizará siguiendo el bloque IF o el bloque ELSE. Se debe considerar siempre la rama que implique más UT.
 
 Con condicional ELSE:
 La evaluación del condicional ELSE es exactamente igual que la del IF. Sin embargo, antes de calcular el tiempo de ejecución, se debe identificar si el cálculo de memoria y tiempo se realizará siguiendo el bloque IF o el bloque ELSE. Se debe considerar siempre la rama que implique más UT.
