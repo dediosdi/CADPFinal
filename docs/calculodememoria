@@ -7,9 +7,40 @@ Para calcular la ocupación de la memoria se debe considerar la:
 
 
 ✔️​ Se entrega una tabla de ocupación orientativa donde cada tipo de dato tiene un valor:
+    ▪️char (1 byte)
+    ▪️boolean (1 byte)
+    ▪️integer(4 bytes)
+    ▪️real (8 bytes)
+    ▪️string (tamaño + 1 byte)
+    ▪️subrango (depende el tipo)
+    ▪️registro (suma de sus campos)
+    ▪️arreglos (dimF * tipo de elemento)
+    ▪️puntero(4 bytes)
 
-    ```bash
-    charfasf
-    ```
+
+program tres;
+    type
+        puntero = ^real; 
+        puntero2 = ^char;
+        persona = record;
+            nombre: string[20]; //-> 21 bytes
+            dni: integer; //-> 4 bytes
+        end;
+
+    var
+        p: puntero;  //-> 4 bytes
+        q: puntero2; //-> 4 bytes
+        per: persona; //-> 25 bytes
+        precio: real; //-> 8 bytes
+         //-> TOTAL: 41 bytes
+    begin
+        new(p); //se reserva espacio para el contenido de p que es real -> 8 bytes
+        new(q); //se reserva espacio para el contenido de q que es char -> 1 bytes
+          //-> TOTAL: 41 bytes
+
+          //-> TOTAL MEMORIA ESTATICA: 41 bytes
+    end.
+
+
 
   
