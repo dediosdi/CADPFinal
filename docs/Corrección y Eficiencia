@@ -1,65 +1,59 @@
-## Corrección y Eficiencia: 
+Corrección y Eficiencia: 🎯🎨✨
 
+CORRECCIÓN: 📌​
 
-## CORRECCIÓN: 📌​
- 
-  Un programa se considera eficiente si:
-  ✔️​ Realiza la tarea buscada de acuerdo a sus especificaciones.
+Un programa se considera correcto si:
+✔️​ Realiza la tarea buscada de acuerdo a sus especificaciones. 🎯🎯🎯
 
-  ## Técnicas para la correción de programas: 
-    🪧 TESTING: El testing es el proceso de verificar que un programa o sistema funcione correctamente. Consiste en ejecutar          el software para detectar errores o fallos, asegurando que el código cumpla con los requisitos especificados. Se               evalúan los casos limites del algoritmo.
+Técnicas para la corrección de programas:
 
-    🐛 DEBUGGING: Es el proceso de descubrir y reparar la causa del error. Se diseñan y aplican pruebas adicionales para              conocer y resolver la naturaleza del error. También se suelen agregar sentencias adicionales al programa para                  monitorear su comportamiento en determinados puntos de la ejecución.
+🪧 TESTING:
+El testing es el proceso de verificar que un programa o sistema funcione correctamente. Consiste en ejecutar el software para detectar errores o fallos, asegurando que el código cumpla con los requisitos especificados. También se evalúan los casos límites del algoritmo.
 
-    📣 WALKTHROUGH: Es recorrer el programa frente a una audiencia.
+🐛 DEBUGGING:
+Es el proceso de descubrir y reparar la causa del error. Para ello, se diseñan y aplican pruebas adicionales que permitan conocer y resolver la naturaleza del error. Además, es común agregar sentencias adicionales al programa para monitorear su comportamiento en determinados puntos de la ejecución.
 
-    ☑️​ VERIFICACIÓN: Verificar un programa significa controlar las pre y post condiciones del mismo.
+📣 WALKTHROUGH:
+Implica recorrer el programa frente a una audiencia, explicando su funcionamiento y buscando posibles errores o mejoras.
 
-    
+☑️​ VERIFICACIÓN:
+Verificar un programa consiste en controlar las precondiciones y postcondiciones asociadas al mismo, asegurando que cumpla con los criterios establecidos. ✨✨✨
 
-_______________________________________________________________________________________
+EFICIENCIA: 📌​
 
+Una vez que un algoritmo se considera correcto, el siguiente paso es determinar su eficiencia. ✨🎯🎨
 
+⏳​ El análisis de la eficiencia estudia el tiempo que tarda un algoritmo en ejecutarse y la memoria que requiere.
 
-## EFICIENCIA: 📌​
+❗ Siempre que los valores para medir la eficiencia cambien según los valores de entrada (por ejemplo, cortar un bucle a partir de un dato ingresado por teclado), se deben evaluar los casos límites y los peores casos del algoritmo.
 
-   Una vez se termina un algoritmo y se decide que es correcto, el proximo paso es determinar la eficiencia del mismo.
+CONSIDERACIONES PARA MEDIR LA EFICIENCIA:
 
-   ⏳​ El analisis de la eficiencia estudia el tiempo que tarda un algoritmo en ejecutarse y la memoria que requiere. 
+Una instrucción elemental equivale a 1 UT (Unidad de Tiempo). 🎯🎨✨
 
-   ❗ Siempre que los valores para medir la eficiencia cambien segun los valores de entrada(por ejemplo, cortar un bucle a           partir de un dato ingresado por teclado), se deben evaluar los casos limites/peores casos del algoritmo.
+EJEMPLOS:
 
-    CONSIDERACIONES PARA MEDIR LA EFICIENCIA:
-    Una instrucción elemental equivale a 1UT.
+Algoritmo de tiempo constante:
 
-    EJEMPLOS:
-    ◾ Algoritmo de tiempo constante:
-    aux:=4; //T(1) = 1UT
-    aux:= aux * 5; //T(2) multiplicación+asignacion= 2 UT
-    xd:=aux; //T(3) = 1UT
-    //TOTAL: 4UT
+aux := 4;               // T(1) = 1 UT
+aux := aux * 5;         // T(2) = multiplicación + asignación = 2 UT
+xd := aux;              // T(3) = 1 UT
+// TOTAL: 4 UT
 
-    ___________________________________________________
+Con condicional IF:
 
-     ◾ Con condicional IF:
-    aux:=49; //T(1) = 1UT
-    aux:= aux * 5; //T(2) = 2 UT
-    if (aux > 45) then begin  //Como se evalúa siempre el peor caso es necesario suponer que se va a entrar al else -> Evaluar     condición del IF (1UT)
-    temp:=aux-5; //Resta + asignación 2UT
-    x:=temp+aux+2; //Suma+resta+asignación 3UT 
-                  //T(3)=1+2+3=6UT
-    end;
-    x:=x*10; T(4)=2UT
-    //TOTAL: 11UT
+aux := 49;              // T(1) = 1 UT
+aux := aux * 5;         // T(2) = 2 UT
+if (aux > 45) then begin
+  // Evaluación de condición del IF: 1 UT
+  temp := aux - 5;      // Resta + asignación = 2 UT
+  x := temp + aux + 2;  // Suma + suma + asignación = 3 UT
+                        // T(3) = 1 + 2 + 3 = 6 UT
+end;
+x := x * 10;            // T(4) = 2 UT
+// TOTAL: 11 UT
 
-    ___________________________________________________
-
-    ◾ Con condicional ELSE:
-     Es exactamente igual que el if pero se debe evaluar antes si el calculo de memoria se va a hacer siguiendo el if o             siguiendo el else. Se debe hacer por la rama que más UT lleve.
-
-    ___________________________________________________
-
-    ◾ Con condicional ELSE:
-     Es exactamente igual que el if pero se debe evaluar antes si el calculo de memoria se va a hacer siguiendo el if o             siguiendo el else. Se debe hacer por la rama que más UT lleve.
+Con condicional ELSE:
+La evaluación del condicional ELSE es exactamente igual que la del IF. Sin embargo, antes de calcular el tiempo de ejecución, se debe identificar si el cálculo de memoria y tiempo se realizará siguiendo el bloque IF o el bloque ELSE. Se debe considerar siempre la rama que implique más UT.
 
 
