@@ -106,7 +106,7 @@ x := x * 10;            // T(4) = 2 UT
 
 
 5. **Con ciclo WHILE:**
-   Se debe seguir la formula N+1 (EvaluarCond) + N (cuerpo)
+   Se debe seguir la formula C+1 (EvaluarCond) + N (cuerpo)
    Siendo N la cantidad de veces que se ejecuta el while.
    Siendo EvaluarCond las UT que se tarda en evaluar las condiciones del while.
    Siendo Cuerpo las UT dentro del while
